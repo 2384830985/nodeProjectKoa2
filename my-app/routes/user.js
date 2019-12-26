@@ -2,7 +2,7 @@ const router = require('koa-router')();
 const {login} = require('./../controller/user')
 const {SuccessModel,ErrorModel} = require('./../model/resModel')
 
-router.prefix('/api')
+router.prefix('/ajax')
 
 router.post('/login',async (context,next)=>{
     const {username,password} = context.request.body;

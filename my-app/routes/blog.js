@@ -8,7 +8,7 @@ const {
     updateBlog,
     deleteBlog
 } = require('./../controller/blog')
-router.prefix('/api')
+router.prefix('/ajax')
 
 router.get('/list',async function (context,next) {
     const {author:author="",keyword:keyword=""} = context.query;
